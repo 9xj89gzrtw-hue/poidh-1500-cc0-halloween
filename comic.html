@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Trick or Treat (and Proof) — CC0 Halloween comic</title>
+<style>
+  @page { size: 1600px 1760px; margin: 0; }
+  html, body { margin: 0; padding: 0; background: #0b0716; }
+  svg { display: block; }
+  text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<svg width="1600" height="1760" viewBox="0 0 1600 1760" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241243"/>
+      <stop offset="0.55" stop-color="#170c2e"/>
+      <stop offset="1" stop-color="#0d0619"/>
+    </linearGradient>
+    <linearGradient id="flash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2a5e"/>
+      <stop offset="1" stop-color="#1a1130"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="boom" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#fff3c4" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#fff3c4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <rect width="1600" height="1760" fill="#0b0716"/>
+
+  <!-- ================= PANEL 1 : the ultimatum ================= -->
+  <g transform="translate(24,24)">
+    <clipPath id="c1"><rect width="768" height="768" rx="6"/></clipPath>
+    <g clip-path="url(#c1)">
+      <rect width="768" height="768" fill="url(#night)"/>
+      <!-- moon -->
+      <circle cx="648" cy="112" r="54" fill="#f4e7bd"/>
+      <circle cx="626" cy="100" r="46" fill="url(#night)"/>
+      <!-- stars -->
+      <g fill="#f4e7bd" opacity="0.75">
+        <rect x="96" y="70" width="5" height="5"/><rect x="210" y="44" width="4" height="4"/>
+        <rect x="330" y="96" width="5" height="5"/><rect x="470" y="52" width="4" height="4"/>
+        <rect x="580" y="150" width="4" height="4"/><rect x="150" y="180" width="4" height="4"/>
+        <rect x="410" y="150" width="5" height="5"/>
+      </g>
+      <!-- houses silhouette -->
+      <g fill="#170d2b">
+        <rect x="-10" y="300" width="300" height="330"/>
+        <polygon points="-10,300 140,206 290,300"/>
+        <rect x="470" y="336" width="320" height="294"/>
+        <polygon points="470,336 630,236 790,336"/>
+      </g>
+      <!-- lit window -->
+      <rect x="196" y="368" width="74" height="74" fill="#f5a63c" opacity="0.9"/>
+      <rect x="196" y="368" width="74" height="74" fill="none" stroke="#2a1a44" stroke-width="6"/>
+      <line x1="233" y1="368" x2="233" y2="442" stroke="#2a1a44" stroke-width="6"/>
+      <line x1="196" y1="405" x2="270" y2="405" stroke="#2a1a44" stroke-width="6"/>
+      <circle cx="233" cy="405" r="120" fill="url(#glow)"/>
+      <!-- door -->
+      <rect x="54" y="470" width="96" height="160" fill="#2b1a44"/>
+      <rect x="54" y="470" width="96" height="160" fill="none" stroke="#3d2a5e" stroke-width="6"/>
+      <circle cx="134" cy="552" r="7" fill="#f5a63c"/>
+      <!-- ground -->
+      <rect y="628" width="768" height="140" fill="#0a0513"/>
+      <rect y="628" width="768" height="6" fill="#2a1a44"/>
+
+      <!-- kid (Nouns) -->
+      <g>
+        <!-- body -->
+        <rect x="470" y="470" width="120" height="160" rx="12" fill="#f0f0f0"/>
+        <rect x="470" y="600" width="52" height="60" fill="#1b1b1b"/>
+        <rect x="538" y="600" width="52" height="60" fill="#1b1b1b"/>
+        <!-- head -->
+        <circle cx="530" cy="404" r="76" fill="#f7f2e6"/>
+        <circle cx="530" cy="404" r="76" fill="none" stroke="#0b0716" stroke-width="6"/>
+        <!-- nouns glasses -->
+        <rect x="474" y="378" width="48" height="52" rx="6" fill="#ffffff" stroke="#0b0716" stroke-width="5"/>
+        <rect x="534" y="378" width="48" height="52" rx="6" fill="#ffffff" stroke="#0b0716" stroke-width="5"/>
+        <line x1="522" y1="400" x2="534" y2="400" stroke="#0b0716" stroke-width="5"/>
+        <rect x="492" y="398" width="12" height="14" fill="#0b0716"/>
+        <rect x="552" y="398" width="12" height="14" fill="#0b0716"/>
+        <!-- bucket -->
+        <path d="M400 560 h84 l-10 90 h-64 z" fill="#f08a24"/>
+        <path d="M404 560 a38 30 0 0 1 76 0" fill="none" stroke="#c96a12" stroke-width="8"/>
+        <circle cx="424" cy="590" r="7" fill="#0b0716"/><circle cx="446" cy="600" r="7" fill="#0b0716"/>
+        <!-- phone raised -->
+        <rect x="586" y="404" width="42" height="66" rx="8" fill="#0b0716" stroke="#3d2a5e" stroke-width="4"/>
+        <rect x="592" y="412" width="30" height="46" rx="4" fill="#7ef0d0" opacity="0.85"/>
+      </g>
+
+      <!-- ghost (Nouns ghost) -->
+      <g opacity="0.92">
+        <path d="M132 372 q0 -96 78 -96 q78 0 78 96 v148 q-24 -22 -39 0 q-20 -22 -39 0 q-20 -22 -39 0 q-20 -22 -39 0 z" fill="#e9eefb"/>
+        <path d="M132 372 q0 -96 78 -96 q78 0 78 96 v148 q-24 -22 -39 0 q-20 -22 -39 0 q-20 -22 -39 0 q-20 -22 -39 0 z" fill="none" stroke="#b9c4dd" stroke-width="4"/>
+        <rect x="158" y="336" width="40" height="44" rx="5" fill="#ffffff" stroke="#2a2a3a" stroke-width="4"/>
+        <rect x="210" y="336" width="40" height="44" rx="5" fill="#ffffff" stroke="#2a2a3a" stroke-width="4"/>
+        <line x1="198" y1="356" x2="210" y2="356" stroke="#2a2a3a" stroke-width="4"/>
+        <rect x="170" y="350" width="10" height="12" fill="#2a2a3a"/>
+        <rect x="222" y="350" width="10" height="12" fill="#2a2a3a"/>
+        <ellipse cx="208" cy="424" rx="16" ry="10" fill="#c6cfe4"/>
+      </g>
+
+      <!-- speech bubble: kid -->
+      <g>
+        <path d="M300 148 h336 a26 26 0 0 1 26 26 v92 a26 26 0 0 1 -26 26 h-246 l-56 40 v-40 h-34 a26 26 0 0 1 -26 -26 v-92 a26 26 0 0 1 26 -26 z" fill="#ffffff"/>
+        <text x="330" y="214" font-size="40" font-weight="700" fill="#170c2e">Pics or it</text>
+        <text x="330" y="262" font-size="40" font-weight="700" fill="#170c2e">didn't happen.</text>
+      </g>
+      <!-- small ghost reply -->
+      <g>
+        <rect x="96" y="548" width="196" height="54" rx="27" fill="#e9eefb"/>
+        <text x="120" y="585" font-size="32" font-weight="700" fill="#2a2a3a">…what?</text>
+      </g>
+    </g>
+    <rect width="768" height="768" fill="none" stroke="#f08a24" stroke-width="4" rx="6"/>
+  </g>
+
+  <!-- ================= PANEL 2 : the attempt ================= -->
+  <g transform="translate(808,24)">
+    <clipPath id="c2"><rect width="768" height="768" rx="6"/></clipPath>
+    <g clip-path="url(#c2)">
+      <rect width="768" height="768" fill="#120b22"/>
+      <circle cx="384" cy="330" r="300" fill="#1d1236"/>
+      <!-- motion lines -->
+      <g stroke="#3a2a5e" stroke-width="8" stroke-linecap="round" opacity="0.9">
+        <line x1="96" y1="196" x2="176" y2="240"/>
+        <line x1="60" y1="300" x2="150" y2="320"/>
+        <line x1="96" y1="410" x2="176" y2="392"/>
+        <line x1="672" y1="196" x2="592" y2="240"/>
+        <line x1="708" y1="300" x2="618" y2="320"/>
+        <line x1="672" y1="410" x2="592" y2="392"/>
+      </g>
+
+      <!-- ghost, arms up, big -->
+      <g>
+        <path d="M204 300 q0 -170 180 -170 q180 0 180 170 v300 q-45 -40 -90 0 q-45 -40 -90 0 q-45 -40 -90 0 q-45 -40 -90 0 z" fill="#eef2fd"/>
+        <path d="M204 300 q0 -170 180 -170 q180 0 180 170 v300 q-45 -40 -90 0 q-45 -40 -90 0 q-45 -40 -90 0 q-45 -40 -90 0 z" fill="none" stroke="#b9c4dd" stroke-width="5"/>
+        <!-- arms -->
+        <path d="M204 360 q-90 -30 -120 -110" fill="none" stroke="#eef2fd" stroke-width="46" stroke-linecap="round"/>
+        <path d="M564 360 q90 -30 120 -110" fill="none" stroke="#eef2fd" stroke-width="46" stroke-linecap="round"/>
+        <!-- glasses -->
+        <rect x="264" y="238" width="96" height="104" rx="8" fill="#ffffff" stroke="#2a2a3a" stroke-width="8"/>
+        <rect x="408" y="238" width="96" height="104" rx="8" fill="#ffffff" stroke="#2a2a3a" stroke-width="8"/>
+        <line x1="360" y1="288" x2="408" y2="288" stroke="#2a2a3a" stroke-width="8"/>
+        <rect x="292" y="270" width="26" height="30" fill="#2a2a3a"/>
+        <rect x="436" y="270" width="26" height="30" fill="#2a2a3a"/>
+        <!-- screaming mouth -->
+        <ellipse cx="384" cy="440" rx="70" ry="54" fill="#2a2a3a"/>
+        <ellipse cx="384" cy="462" rx="40" ry="26" fill="#7a2f52"/>
+      </g>
+
+      <!-- kid bottom right, unimpressed -->
+      <g transform="translate(0,300)">
+        <circle cx="612" cy="300" r="92" fill="#f7f2e6"/>
+        <circle cx="612" cy="300" r="92" fill="none" stroke="#0b0716" stroke-width="7"/>
+        <rect x="546" y="268" width="58" height="62" rx="7" fill="#ffffff" stroke="#0b0716" stroke-width="6"/>
+        <rect x="620" y="268" width="58" height="62" rx="7" fill="#ffffff" stroke="#0b0716" stroke-width="6"/>
+        <line x1="604" y1="294" x2="620" y2="294" stroke="#0b0716" stroke-width="6"/>
+        <rect x="568" y="292" width="14" height="16" fill="#0b0716"/>
+        <rect x="642" y="292" width="14" height="16" fill="#0b0716"/>
+        <path d="M576 356 q40 12 76 0" fill="none" stroke="#0b0716" stroke-width="7" stroke-linecap="round"/>
+        <rect x="700" y="272" width="46" height="70" rx="9" fill="#0b0716" stroke="#3d2a5e" stroke-width="4"/>
+        <rect x="706" y="280" width="34" height="50" rx="4" fill="#7ef0d0" opacity="0.8"/>
+      </g>
+
+      <!-- speech -->
+      <g>
+        <path d="M436 96 h236 a24 24 0 0 1 24 24 v78 a24 24 0 0 1 -24 24 h-176 l-44 34 v-34 h-16 a24 24 0 0 1 -24 -24 v-78 a24 24 0 0 1 24 -24 z" fill="#ffffff"/>
+        <text x="462" y="164" font-size="46" font-weight="800" fill="#170c2e">BOOOOO.</text>
+      </g>
+      <g>
+        <rect x="60" y="596" width="300" height="56" rx="28" fill="#e9eefb"/>
+        <text x="84" y="634" font-size="32" font-weight="700" fill="#2a2a3a">Cool. Where's the</text>
+      </g>
+      <g>
+        <rect x="60" y="662" width="222" height="56" rx="28" fill="#e9eefb"/>
+        <text x="84" y="700" font-size="32" font-weight="700" fill="#2a2a3a">proof, though?</text>
+      </g>
+    </g>
+    <rect width="768" height="768" fill="none" stroke="#f08a24" stroke-width="4" rx="6"/>
+  </g>
+
+  <!-- ================= PANEL 3 : the selfie ================= -->
+  <g transform="translate(24,808)">
+    <clipPath id="c3"><rect width="768" height="768" rx="6"/></clipPath>
+    <g clip-path="url(#c3)">
+      <rect width="768" height="768" fill="url(#flash)"/>
+      <circle cx="384" cy="300" r="330" fill="url(#boom)" opacity="0.75"/>
+      <!-- flash rays -->
+      <g stroke="#fff6d8" stroke-width="5" opacity="0.55">
+        <line x1="384" y1="60" x2="384" y2="150"/>
+        <line x1="140" y1="150" x2="200" y2="210"/>
+        <line x1="628" y1="150" x2="568" y2="210"/>
+        <line x1="96" y1="330" x2="186" y2="330"/>
+        <line x1="672" y1="330" x2="582" y2="330"/>
+      </g>
+
+      <!-- ghost leaning in, happy -->
+      <g>
+        <path d="M96 366 q0 -150 150 -150 q150 0 150 150 v240 q-37 -32 -75 0 q-37 -32 -75 0 q-37 -32 -75 0 q-37 -32 -75 0 z" fill="#eef2fd"/>
+        <rect x="140" y="300" width="80" height="86" rx="7" fill="#ffffff" stroke="#2a2a3a" stroke-width="7"/>
+        <rect x="256" y="300" width="80" height="86" rx="7" fill="#ffffff" stroke="#2a2a3a" stroke-width="7"/>
+        <line x1="220" y1="342" x2="256" y2="342" stroke="#2a2a3a" stroke-width="7"/>
+        <rect x="164" y="328" width="22" height="26" fill="#2a2a3a"/>
+        <rect x="280" y="328" width="22" height="26" fill="#2a2a3a"/>
+        <path d="M186 452 q60 44 120 0" fill="none" stroke="#2a2a3a" stroke-width="8" stroke-linecap="round"/>
+        <!-- blush -->
+        <ellipse cx="150" cy="420" rx="18" ry="11" fill="#f0a8b8" opacity="0.8"/>
+        <ellipse cx="326" cy="420" rx="18" ry="11" fill="#f0a8b8" opacity="0.8"/>
+      </g>
+
+      <!-- kid leaning in -->
+      <g transform="translate(330,26)">
+        <circle cx="240" cy="330" r="128" fill="#f7f2e6"/>
+        <circle cx="240" cy="330" r="128" fill="none" stroke="#0b0716" stroke-width="8"/>
+        <rect x="148" y="286" width="80" height="86" rx="8" fill="#ffffff" stroke="#0b0716" stroke-width="7"/>
+        <rect x="252" y="286" width="80" height="86" rx="8" fill="#ffffff" stroke="#0b0716" stroke-width="7"/>
+        <line x1="228" y1="328" x2="252" y2="328" stroke="#0b0716" stroke-width="7"/>
+        <rect x="176" y="316" width="18" height="22" fill="#0b0716"/>
+        <rect x="280" y="316" width="18" height="22" fill="#0b0716"/>
+        <path d="M196 400 q44 34 88 0" fill="none" stroke="#0b0716" stroke-width="8" stroke-linecap="round"/>
+      </g>
+
+      <!-- phone in the foreground -->
+      <g>
+        <rect x="600" y="560" width="150" height="230" rx="22" fill="#0b0716" stroke="#3d2a5e" stroke-width="5"/>
+        <rect x="616" y="586" width="118" height="180" rx="10" fill="#cfe9ff"/>
+        <circle cx="675" cy="676" r="26" fill="#9fd8ff"/>
+        <text x="626" y="772" font-size="20" font-family="Helvetica" fill="#3d2a5e">6:66</text>
+      </g>
+
+      <!-- speech -->
+      <g>
+        <path d="M392 84 h248 a24 24 0 0 1 24 24 v78 a24 24 0 0 1 -24 24 h-186 l-42 32 v-32 h-20 a24 24 0 0 1 -24 -24 v-78 a24 24 0 0 1 24 -24 z" fill="#ffffff"/>
+        <text x="418" y="152" font-size="42" font-weight="800" fill="#170c2e">Say cheese.</text>
+      </g>
+      <g>
+        <rect x="70" y="640" width="300" height="56" rx="28" fill="#e9eefb"/>
+        <text x="94" y="678" font-size="30" font-weight="700" fill="#2a2a3a">Fine. A selfie.</text>
+      </g>
+    </g>
+    <rect width="768" height="768" fill="none" stroke="#f08a24" stroke-width="4" rx="6"/>
+  </g>
+
+  <!-- ================= PANEL 4 : the proof ================= -->
+  <g transform="translate(808,808)">
+    <clipPath id="c4"><rect width="768" height="768" rx="6"/></clipPath>
+    <g clip-path="url(#c4)">
+      <rect width="768" height="768" fill="#0d0819"/>
+      <!-- gallery backdrop -->
+      <rect width="768" height="768" fill="#120d20"/>
+      <text x="40" y="60" font-size="26" font-family="Helvetica" fill="#6b5f88">Photos · Today</text>
+
+      <!-- the photo -->
+      <rect x="56" y="92" width="560" height="470" rx="10" fill="#1d1730" stroke="#3a2a5e" stroke-width="3"/>
+      <g>
+        <rect x="64" y="100" width="544" height="454" rx="6" fill="#1a1230"/>
+        <circle cx="516" cy="170" r="40" fill="#f4e7bd" opacity="0.85"/>
+        <rect x="64" y="440" width="544" height="114" fill="#0f0a1c"/>
+        <!-- pumpkin -->
+        <ellipse cx="196" cy="426" rx="52" ry="44" fill="#f08a24"/>
+        <rect x="186" y="372" width="20" height="26" fill="#3f6b2a"/>
+        <polygon points="168,414 186,434 204,414" fill="#0f0a1c"/>
+        <polygon points="212,414 230,434 248,414" fill="#0f0a1c"/>
+        <!-- the kid, alone in the frame -->
+        <rect x="308" y="356" width="104" height="128" rx="10" fill="#f0f0f0"/>
+        <circle cx="360" cy="302" r="64" fill="#f7f2e6"/>
+        <circle cx="360" cy="302" r="64" fill="none" stroke="#0b0716" stroke-width="6"/>
+        <rect x="316" y="280" width="40" height="44" rx="6" fill="#ffffff" stroke="#0b0716" stroke-width="5"/>
+        <rect x="368" y="280" width="40" height="44" rx="6" fill="#ffffff" stroke="#0b0716" stroke-width="5"/>
+        <line x1="356" y1="300" x2="368" y2="300" stroke="#0b0716" stroke-width="5"/>
+        <rect x="332" y="296" width="10" height="12" fill="#0b0716"/>
+        <rect x="384" y="296" width="10" height="12" fill="#0b0716"/>
+        <path d="M340 340 q20 10 40 0" fill="none" stroke="#0b0716" stroke-width="6" stroke-linecap="round"/>
+        <!-- the empty spot where the ghost should be -->
+        <rect x="452" y="214" width="112" height="188" rx="8" fill="none" stroke="#6b5f88" stroke-width="4" stroke-dasharray="12 10"/>
+      </g>
+
+      <!-- ghost pressed against the photo edge, translucent and sad -->
+      <g opacity="0.6">
+        <path d="M612 268 q0 -96 70 -96 q70 0 70 96 v150 q-18 -16 -35 0 q-18 -16 -35 0 q-18 -16 -35 0 q-18 -16 -35 0 z" fill="#eef2fd"/>
+        <rect x="636" y="236" width="40" height="42" rx="4" fill="#ffffff" stroke="#2a2a3a" stroke-width="4"/>
+        <rect x="684" y="236" width="40" height="42" rx="4" fill="#ffffff" stroke="#2a2a3a" stroke-width="4"/>
+        <line x1="676" y1="256" x2="684" y2="256" stroke="#2a2a3a" stroke-width="4"/>
+        <rect x="646" y="246" width="10" height="13" fill="#2a2a3a"/>
+        <rect x="694" y="246" width="10" height="13" fill="#2a2a3a"/>
+        <path d="M650 344 q26 -14 52 0" fill="none" stroke="#2a2a3a" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <path d="M626 262 q-11 18 0 30 q11 -12 0 -30 z" fill="#8fd4ff"/>
+
+      <!-- caption bar -->
+      <g>
+        <rect x="56" y="596" width="656" height="120" rx="12" fill="#f4e7bd"/>
+        <text x="92" y="646" font-size="40" font-weight="800" fill="#170c2e">Third Halloween.</text>
+        <text x="92" y="694" font-size="40" font-weight="800" fill="#170c2e">Still no proof I was there.</text>
+      </g>
+      <g opacity="0.65">
+        <rect x="470" y="740" width="250" height="8" rx="4" fill="#3a2a5e"/>
+      </g>
+    </g>
+    <rect width="768" height="768" fill="none" stroke="#f08a24" stroke-width="4" rx="6"/>
+  </g>
+
+  <!-- ================= footer ================= -->
+  <g>
+    <text x="24" y="1700" font-size="34" font-weight="800" fill="#f4e7bd" letter-spacing="1">TRICK OR TREAT (AND PROOF)</text>
+    <text x="24" y="1738" font-size="22" fill="#8d80a8">Four panels · characters: Nouns (CC0) · dedicated to the public domain under CC0 1.0</text>
+    <text x="1576" y="1738" font-size="22" fill="#8d80a8" text-anchor="end">poidh #1500 · CC0 Halloween</text>
+  </g>
+</svg>
+</body>
+</html>
